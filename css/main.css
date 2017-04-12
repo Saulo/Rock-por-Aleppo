@@ -1,0 +1,674 @@
+/************************************************************************************************************************
+
+ROCK POR ALEPPO
+Description: Base CSS file
+Version: 1.0 / 2017-04
+
+************************************************************************************************************************/
+
+
+@charset "UTF-8";
+
+
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+/************************************************************************************************************************/
+/********************************** Eric Meyer's Reset CSS v2.0 - http://cssreset.com ***********************************/
+/************************************************************************************************************************/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,h1,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+	border: 0; font-size: 100%; font: inherit; vertical-align: baseline;margin:0;padding:0}article,h1,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:normal;}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+/************************************************************************************************************************/
+/******************************************************** COMMON ********************************************************/
+/************************************************************************************************************************/
+*,
+*:before,
+*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*{
+	margin: 0; padding: 0; outline: none;
+/*
+	-webkit-transition: all 300ms ease-in-out;
+	   -moz-transition: all 300ms ease-in-out;
+	    -ms-transition: all 300ms ease-in-out;
+	        transition: all 300ms ease-in-out;
+*/
+}
+a,
+button{
+/*
+	-webkit-transition: all 300ms ease-in-out;
+	   -moz-transition: all 300ms ease-in-out;
+	    -ms-transition: all 300ms ease-in-out;
+	        transition: all 300ms ease-in-out;
+*/
+}
+.clear{
+	clear: both;
+}
+img,
+iframe{
+	border: none;
+}
+div.content{
+	position: relative;
+	margin: 0 auto; width: 100%; max-width: 960px;
+}
+
+html,body{
+	height: 100%;
+}
+body{
+	font-size: 1.000em; font-family: 'Open Sans', sans-serif;
+	background: fixed #ffffff url(../img/bg-guitarra.png) no-repeat center;
+}
+section{
+	position: relative;
+	clear: both;
+}
+	section h2{
+		padding: 0 0 20px 0;
+		color: #424242;
+		font-size: 5.000em; text-transform: uppercase;
+		font-family: 'Oswald', sans-serif; font-weight: normal;
+	}
+	section h2 span{
+		font-weight: 700;
+	}
+	section h2 strong{
+		font-weight: 700;
+		color: #a43e95;
+	}
+	section hr{
+		width: 331px; height: 20px; display: block; margin: 40px auto;
+		border: none;
+		background: url(../img/arame-hr.png) no-repeat 0 0;
+	}
+	section h3{
+		display: block; clear: both;
+		padding: 0 0 20px 0;
+		font-family: 'Oswald', sans-serif; font-weight: normal; text-transform: uppercase;
+		font-size: 1.875em; color: #a43e95;
+	}
+	section h4{
+		display: block; clear: both;
+		padding: 0 0 20px 0;
+		font-family: 'Oswald', sans-serif; font-weight: normal; font-weight: normal;
+		font-size: 1.875em; color: #a43e95;
+	}
+	section h4 strong{
+		font-weight: 700;
+	}
+
+main{
+	min-height: 100%;
+	padding: 0 0 0 0;
+}
+strong{
+	font-weight: 700;
+}
+p{
+	color: #424242; font-size: 1.125em; padding: 0 0 20px 0;
+}
+
+
+
+/************************************************************************************************************************/
+/* CABEÇALHO */
+/************************************************************************************************************************/
+header{
+	position: fixed; width: 100%; height: 137px;
+	background: #3b3b3b;
+	background: rgba(59,59,59,0.8);
+	z-index: 100;
+}
+	header div.content{
+		max-width: 1620px; padding: 0 10px;
+	}
+	header h1{
+		float: left; width: 221px; height: 53px; margin: 35px 0;
+	}
+		header h1 a{
+			display: block; width: 221px; height: 53px;
+			background: url(../img/logo-rock-aleppo.png) no-repeat 0 0; text-indent: -6666px; overflow: hidden;
+		}
+	header a.link-menu{
+		display: none;
+	}
+	header nav{
+		float: left;
+		padding: 55px 45px;
+	}
+		header nav ul{
+
+		}
+		header nav ul li{
+			display: inline-block;
+			padding: 0 25px;
+		}
+		header nav ul li a{
+			padding: 20px 15px;
+			font-family: 'Oswald', sans-serif;
+			color: #ffffff;
+			/* font-size: 1.250em; */
+			font-weight: normal;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	header button{
+		display: inline-block;
+		cursor: pointer;
+		margin: 47px 0 0 0;
+		width: 229px;
+		height: 45px;
+		padding: 0 0 0 35px;
+		background: #ffffff url(../img/ico-faca-doacao.png) no-repeat 25px center;
+		font-family: 'Oswald', sans-serif;
+		font-size: 1.125em;
+		text-transform: uppercase;
+		color: #9b258a;
+		border: none;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		-webkit-box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.25);
+		-moz-box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.25);
+		box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.25);
+	}
+
+
+
+/************************************************************************************************************************/
+/* CONTAGEM REGRESSIVA */
+/************************************************************************************************************************/
+section.contagem-regressiva{
+	padding: 250px 0 0 0;
+	height: 100vh;
+	min-height: 900px;
+	background: url(../img/foto-1.jpg) no-repeat 0 bottom;
+	background-size: cover;
+	display: flex;
+	align-items: top;
+	justify-content: center;
+}
+	section.contagem-regressiva div.content{
+		text-align: center; max-width: 100%;
+		z-index: 1;
+	}
+	section.contagem-regressiva h2{
+		color: #ffffff;
+		font-family: 'Oswald', sans-serif; font-weight: normal; text-transform: uppercase;
+		font-size: 3.125em;
+	}
+	section.contagem-regressiva p{
+		position: relative; margin: 80px 0 0 0; padding: 4px 0; line-height: 30px; text-indent: 70px;
+		font-family: 'Oswald', sans-serif; font-weight: normal; text-transform: uppercase; color: #ffffff;
+		background: #000000;
+		background: rgba(0,0,0,0.27);
+	}
+	section.contagem-regressiva p strong{
+		position: absolute; top: -20px; text-align: center; left: 0; width: 100%; text-indent: -70px;
+		font-size: 8.750em; color: #c52eaf; font-weight: 700;
+		z-index: -1;
+	}
+
+
+
+/************************************************************************************************************************/
+/* VIDEO TEASER */
+/************************************************************************************************************************/
+section.video-teaser{
+	height: 300px;
+}
+section.video-teaser div.video-area{
+	position: absolute; left: 50%; top: 0; margin: -260px 0 0 -470px;
+	width: 940px; height: 520px;
+	background: #000000;
+}
+
+
+
+/************************************************************************************************************************/
+/* SOBRE */
+/************************************************************************************************************************/
+section.sobre{
+	text-align: center; 
+}
+	/* Line up page */
+	body.line-up section.sobre{
+		background: #ffffff;
+	}
+	section.sobre div.content{
+		padding: 0 80px 80px 80px;
+	}
+
+
+
+/************************************************************************************************************************/
+/* SAVE THE CHILDREN */
+/************************************************************************************************************************/
+section.save-the-children{
+	margin: 0 0 190px 0;
+	text-align: center;
+	background: url(../img/bg-save-children.jpg) no-repeat center;
+	background-size: cover;
+	height: 305px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+	/* Line up page */
+	body.line-up section.save-the-children,
+	body.contato section.save-the-children,
+	body.fundicao-progresso section.save-the-children,
+	body.voluntarios section.save-the-children{
+		margin: 0 0;
+	}
+
+
+	section.save-the-children div.content{
+		
+	}
+	section.save-the-children h2{
+		display: inline-block; width: 408px; height: 85px; text-indent: -6666px; overflow: hidden;
+		background: url(../img/logo-save-the-children.png) no-repeat 0 0;
+	}
+	section.save-the-children p{
+		color: #ffffff;
+	}
+	section.save-the-children p strong{
+		font-size: 1.500em;
+	}
+	section.save-the-children p a{
+		color: #ffffff;
+	}
+
+
+
+/************************************************************************************************************************/
+/* FOTOS ARTISTAS */
+/************************************************************************************************************************/
+section.fotos-artistas{
+	padding: 0;	overflow: hidden;
+}
+	section.fotos-artistas div.content{
+		max-width: 100%; height: 844px;
+		position: relative;
+	}
+	section.fotos-artistas div.content figure{
+		position: absolute; left: 50%; top: 0; width: 1920px; margin: 0 0 0 -960px;
+	}
+
+section.fotos-artistas-2{
+	padding: 0;	overflow: hidden;
+}
+	section.fotos-artistas-2 div.content{
+		max-width: 100%; height: 667px;
+		position: relative;
+	}
+	section.fotos-artistas-2 div.content figure{
+		position: absolute; left: 50%; top: 0; width: 1920px; margin: 0 0 0 -960px;
+	}
+
+
+
+/************************************************************************************************************************/
+/* LINE UP */
+/************************************************************************************************************************/
+section.line-up{
+	padding: 100px 0 150px 0;
+	text-align: center;
+	background: #ffffff;
+}
+	/* Line up page */
+	body.line-up section.line-up{
+		padding: 200px 0 150px 0;
+	}
+
+	section.line-up div.content{
+
+	}
+	section.line-up ul{
+		clear: both; display: block;
+	}
+	section.line-up ul li{
+		position: relative;
+		display: inline-block; margin: 40px 25px;
+		color: #424242; font-size: 1.875em; font-family: 'Oswald', sans-serif; font-weight: 700; text-transform: uppercase;
+	}
+	section.line-up ul li::before{
+		content: '•'; position: absolute; left: -30px; top: 0;
+	}
+	section.line-up ul.destaques li{
+		display: inline-block; margin: 40px 30px;
+	}
+	section.line-up ul li:first-child::before,
+	section.line-up ul.destaques li::before{
+		display: none;
+	}
+	section.line-up ul li.tihuana{
+		width: 216px; height: 94px;
+		background: url(../img/logo-tihuana.png) no-repeat 0 center; text-indent: -6666px; overflow: hidden;
+	}
+	section.line-up ul li.caio-scracho{
+		width: 250px; height: 94px;
+		background: url(../img/logo-caio-correa.png) no-repeat 0 center; text-indent: -6666px; overflow: hidden;
+	}
+	section.line-up ul li.detonautas{
+		width: 252px; height: 94px;
+		background: url(../img/logo-detonautas.png) no-repeat 0 center; text-indent: -6666px; overflow: hidden;
+	}
+	section.line-up ul li.highjack{
+		
+	}
+	section.line-up ul li.contratake{
+
+	}
+	section.line-up ul li.priscila-dau{
+
+	}
+
+
+
+/************************************************************************************************************************/
+/* FOTO ALEPPO */
+/************************************************************************************************************************/
+section.foto-aleppo{
+	padding: 0;	overflow: hidden;
+}
+	section.foto-aleppo div.content{
+		max-width: 100%; height: 1156px;
+		position: relative;
+	}
+	section.foto-aleppo div.content figure{
+		position: absolute; left: 50%; top: 0; width: 1920px; margin: 0 0 0 -960px;
+	}
+	section.foto-aleppo div.content figure img{
+
+	}
+
+
+
+/************************************************************************************************************************/
+/* SOBRE ALEPPO */
+/************************************************************************************************************************/
+section.sobre-aleppo{
+	padding: 0 0 120px 0;
+	background: #ffffff; text-align: center; overflow: auto;
+}
+	section.sobre-aleppo ul.estatisticas{
+		width: 100%; display: block; padding: 50px 0 70px 0; float: left;
+	}
+	section.sobre-aleppo ul.estatisticas li{
+		width: 320px; float: left; padding: 110px 20px 0 20px;
+		font-family: 'Oswald', sans-serif; font-weight: normal;
+	}
+	section.sobre-aleppo ul.estatisticas li strong{
+		display: block;
+		font-weight: 700; font-size: 2.000em;
+	}
+	section.sobre-aleppo ul.estatisticas li.refugiados{
+		background: url(../img/ico-aviao.png) no-repeat center 15px;
+	}
+	section.sobre-aleppo ul.estatisticas li.mar-mediterraneo{
+		background: url(../img/ico-barco.png) no-repeat center 15px;
+	}
+	section.sobre-aleppo ul.estatisticas li.refugiados-brasil{
+		background: url(../img/ico-mapa.png) no-repeat center 15px;
+	}
+	section.sobre-aleppo ul.estatisticas li.escola{
+		background: url(../img/ico-capelo.png) no-repeat center 15px;
+	}
+	section.sobre-aleppo ul.estatisticas li.hospitais{
+		background: url(../img/ico-cruz.png) no-repeat center 15px;
+	}
+	section.sobre-aleppo ul.estatisticas li.criancas{
+		background: url(../img/ico-mira.png) no-repeat center 15px;
+	}
+
+
+
+/************************************************************************************************************************/
+/* DURAÇÃO CONFLITO */
+/************************************************************************************************************************/
+section.duracao-conflito{
+	text-align: center;
+	background: url(../img/foto-4.jpg) no-repeat center;
+	height: 100vh;
+	min-height: 900px;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+	section.duracao-conflito div.content{
+		text-align: center; max-width: 100%;
+		z-index: 1;
+	}
+	section.duracao-conflito h2{
+		color: #ffffff;
+		font-family: 'Oswald', sans-serif; font-weight: normal; text-transform: uppercase;
+		font-size: 3.500em;
+	}
+	section.duracao-conflito ul.duracao{
+		position: relative; margin: 80px 0 0 0; text-align: right;
+		background: #000000;
+		background: rgba(0,0,0,0.27);
+		padding: 0 15%;
+	}
+	section.duracao-conflito ul.duracao li{
+		position: relative; width: 24%;  text-align: right;
+		display: inline-block;
+		font-family: 'Oswald', sans-serif; font-weight: normal; text-transform: uppercase; color: #ffffff;
+	}
+	section.duracao-conflito ul.duracao li strong{
+		position: absolute; top: -90px; text-align: right; right: 15px; width: 100%;
+		font-size: 6.750em; color: #c52eaf; font-weight: 700;
+		z-index: -1;
+	}
+
+
+
+/************************************************************************************************************************/
+/* DOAÇÃO */
+/************************************************************************************************************************/
+section.doacao{
+	background: url(../img/bg-textura.jpg) no-repeat center;
+	height: 100vh;
+	min-height: 760px; overflow: auto;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+	section.doacao h2{
+		float: left; width: 50%;
+		color: #ffffff;
+		font-family: 'Oswald', sans-serif; font-weight: normal; text-transform: uppercase; line-height: 2.750em;
+		font-size: 1.563em;
+	}
+		section.doacao h2 strong{
+			display: block;
+			font-size: 3.120em; color: #ffffff;
+		}
+	section.doacao p{
+		float: left;
+		width: 50%;
+		font-size: 1.125em; line-height: 1.750em;
+		color: #ffffff;
+		padding: 55px 0 0 0;
+	}
+	section.doacao button{
+		clear: both;
+		display: block;
+		position: relative;
+		cursor: pointer;
+		margin: 60px auto;
+		width: 229px;
+		height: 45px;
+		padding: 0 0 0 35px;
+		background: #ffffff url(../img/ico-faca-doacao.png) no-repeat 25px center;
+		font-family: 'Oswald', sans-serif;
+		font-size: 1.125em;
+		text-transform: uppercase;
+		color: #9b258a;
+		border: none;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		-webkit-box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.25);
+		-moz-box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.25);
+		box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.25);
+	}
+	section.doacao ul.compartilhamento{
+		display: block; clear: both; text-align: center;
+		width: 100%;
+	}
+		section.doacao ul.compartilhamento li{
+			display: inline-block; padding: 0 20px;
+		}
+		section.doacao ul.compartilhamento li a{
+			display: inline-block; width: 24px; height: 24px;
+			text-indent: -6666px;
+		}
+		section.doacao ul.compartilhamento li.facebook a{
+			background: url(../img/ico-facebook.png) no-repeat center;
+		}
+		section.doacao ul.compartilhamento li.twitter a{
+			background: url(../img/ico-twitter.png) no-repeat center;
+		}
+		section.doacao ul.compartilhamento li.email a{
+			background: url(../img/ico-email.png) no-repeat center;
+		}
+	section.doacao div.barra{
+		display: block; margin: 40px 0 65px 0; clear: both; float: left;
+		width: 100%; height: 40px;
+		background: url(../img/bg-barra.png) repeat 0 0;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+	}
+		section.doacao div.barra div.progresso{
+			display: block; height: 100%; width: 50%;
+			background: #ffffff;
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+		}
+
+
+
+/************************************************************************************************************************/
+/* FOTOS VOLUNTARIOS */
+/************************************************************************************************************************/
+section.fotos-voluntarios{
+	padding: 0;	overflow: hidden;
+}
+	section.fotos-voluntarios div.content{
+		max-width: 100%; height: 1141px;
+		position: relative;
+	}
+	section.fotos-voluntarios div.content figure{
+		position: absolute; left: 50%; top: 0; width: 1920px; margin: 0 0 0 -960px;
+	}
+
+
+
+/************************************************************************************************************************/
+/* SOBRE VOLUNTARIOS */
+/************************************************************************************************************************/
+section.sobre-voluntarios{
+	padding: 0 0 120px 0;
+	background: #ffffff; text-align: center;
+}
+	section.sobre-voluntarios p.lista-voluntarios{
+		line-height: 2.500em;
+	}
+
+
+
+/************************************************************************************************************************/
+/* FUNDICAO PROGRESSO */
+/************************************************************************************************************************/
+section.fundicao-progresso{
+	background: #ffffff; text-align: center;
+	padding: 200px 0 120px 0;
+}
+	section.fundicao-progresso div.mapa iframe{
+		margin: 0 0 50px 0;
+	}
+
+
+
+/************************************************************************************************************************/
+/* CONTATO */
+/************************************************************************************************************************/
+section.contato{
+	padding: 200px 0 120px 0;
+}
+	section.contato h2{
+		text-align: center;
+	}
+	section.contato fieldset{
+		margin: 40px 0 50px 0;
+	}
+	section.contato fieldset label{
+		display: none;
+	}
+	section.contato fieldset input{
+		width: 100%; padding: 8px 0; font-size: 1.125em; margin: 0 0 35px 0;
+		border: none; background: none;
+		border-bottom: 1px solid #a43e95;
+	}
+	::-webkit-input-placeholder {
+		color: #909;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		color: #909;
+		opacity: 1;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+		color: #909;
+		opacity: 1;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		color: #909;
+	}
+	section.contato fieldset p.btn-area{
+		text-align: right; padding: 20px 0 0 0;
+	}
+	section.contato fieldset p.btn-area input{
+		background: #a43e95; border: none; color: #ffffff;
+		font-family: 'Oswald', sans-serif; width: 190px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		-webkit-box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.25);
+		-moz-box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.25);
+		box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.25);
+	}
+
+
+/************************************************************************************************************************/
+/* FOOTER */
+/************************************************************************************************************************/
+footer{
+	background: #ffffff; height: 120px; line-height: 120px;
+	text-align: center;
+}
+footer a{
+	display: inline-block; text-indent: -6666px; overflow: hidden; width: 58px; height: 24px;
+	background: url(../img/logo-6d.png) no-repeat  0 0;
+}
+
+
+
