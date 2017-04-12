@@ -361,7 +361,7 @@ section.line-up{
 	}
 	section.line-up ul li.caio-scracho{
 		width: 250px; height: 94px;
-		background: url(../img/logo-caio-correa.png) no-repeat 0 center; text-indent: -6666px; overflow: hidden;
+		background: url(../img/logo-caio.png) no-repeat 0 center; text-indent: -6666px; overflow: hidden;
 	}
 	section.line-up ul li.detonautas{
 		width: 252px; height: 94px;
@@ -655,6 +655,44 @@ section.contato{
 		-webkit-box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.25);
 		-moz-box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.25);
 		box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.25);
+	}
+
+
+
+/************************************************************************************************************************/
+/* LINE UP */
+/************************************************************************************************************************/
+section.line-up{
+	padding: 200px 0 120px 0; max-width: 960px;
+}
+	section.sobre-artistas{
+		padding: 0 0 120px 0; display: block; overflow: auto;
+	}
+	section.sobre-artistas article{
+		width: 50%; padding: 0 5%; float: left; height: 490px;
+	}
+
+	section.sobre-artistas article h4{
+		display: inline-block; width: 255px; height: 115px; text-indent: -6666px; overflow: hidden;
+		margin: 0 0 10px 0;
+	}
+	section.sobre-artistas article.texto-tihuana h4{
+		background: url(../img/logo-tihuana.png) no-repeat left bottom;
+	}
+	section.sobre-artistas article.texto-detonautas h4{
+		background: url(../img/logo-detonautas.png) no-repeat left bottom;
+	}
+	section.sobre-artistas article.texto-caio h4{
+		background: url(../img/logo-caio.png) no-repeat left bottom;
+	}
+	section.sobre-artistas article.texto-highjack h4{
+		background: url(../img/logo-highjack.png) no-repeat left bottom;
+	}
+	section.sobre-artistas article.texto-contratake h4{
+		background: url(../img/logo-contratake.png) no-repeat left bottom;
+	}
+	section.sobre-artistas article.texto-priscila h4{
+		background: url(../img/logo-dj-priscila.png) no-repeat left bottom;
 	}
 
 
